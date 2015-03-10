@@ -1,2 +1,5 @@
-# crscrolling
-Javascript nano-library for constant rate scrolling.
+# vScroll
+
+Javascript library for programmatically controlling scrolling.
+
+Work in progress.
