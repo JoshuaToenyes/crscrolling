@@ -1,5 +1,6 @@
 doc/
 node_modules/
 test/*.js
+test/*.map
 npm-debug.log
 tmp/

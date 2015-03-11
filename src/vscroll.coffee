@@ -22,7 +22,7 @@ startScroll = (x, y) ->
   return -> end = true
 
 
-window.vscroll = module.exports =
+module.exports =
 
   ##
   # Sets the document's scrolling velocity in pixels per second.

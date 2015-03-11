@@ -17,7 +17,7 @@ module.exports = (grunt) ->
         flatten: false,
         cwd: 'src',
         src: ['./**/*.coffee'],
-        dest: 'tmp/dist',
+        dest: 'dist',
         ext: '.js'
       test:
         expand: true,
@@ -74,12 +74,6 @@ module.exports = (grunt) ->
           {
             expand: true
             flatten: true
-            src: ['tmp/dist/**/*.map']
-            dest: 'dist/'
-            filter: 'isFile'
-          }, {
-            expand: true
-            flatten: true
             src: ['tmp/test/**/*.map']
             dest: 'test/'
             filter: 'isFile'
@@ -104,7 +98,7 @@ module.exports = (grunt) ->
     'coffeelint',
     'clean',
     'coffee',
-    'browserify'
+    #'browserify'
     'copy:maps'
     'clean:tmp'
     ]);
